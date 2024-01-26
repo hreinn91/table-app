@@ -1,0 +1,11 @@
+version: "3.7"
+
+
+services:
+  table-ui:
+    build:
+      dockerfile: Dockerfile
+      context: table-ui
+    image: table-ui:latest
+    ports: 
+      - "4000:80"
